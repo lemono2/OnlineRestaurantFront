@@ -10,6 +10,8 @@ import { FoodCardComponent } from './food-card/food-card.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductsComponent } from './products/products.component';
 import { BasketComponent } from './basket/basket.component';
+import {provideHttpClient} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -24,9 +26,11 @@ import { BasketComponent } from './basket/basket.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

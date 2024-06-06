@@ -1,4 +1,5 @@
-import {Component, input} from '@angular/core';
+import {Component, Input, input} from '@angular/core';
+import {Product} from "../interfaces/product";
 
 @Component({
   selector: 'app-food-card',
@@ -6,19 +7,5 @@ import {Component, input} from '@angular/core';
   styleUrl: './food-card.component.css'
 })
 export class FoodCardComponent {
-  food:{
-  name:string,
-  price: number,
-  containsNut:boolean,
-  vegetarian:false,
-  spiciness:number
-  image:string
-}    ={
-  name:"no Name",
-  price: 5,
-  containsNut: false,
-  vegetarian: false,
-  spiciness:5,
-  image:"url"
-}
+  @Input() food:Product | null = null;
 }

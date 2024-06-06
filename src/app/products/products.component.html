@@ -1,3 +1,7 @@
-<div class="gap-4">
-  <app-food-card> </app-food-card>
+<div class="mt-6 grid grid-cols-3 gap-4 sm:mt-8">
+  @for(product of products;track product.id){
+    <app-food-card [food]="product" > </app-food-card>
+
+  }
+
 </div>
