@@ -11,6 +11,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ProductsComponent } from './products/products.component';
 import { BasketComponent } from './basket/basket.component';
 import {provideHttpClient} from "@angular/common/http";
+import { MainComponent } from './main/main.component';
+import { BasketItemComponent } from './basket-item/basket-item.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import {provideHttpClient} from "@angular/common/http";
     FoodCardComponent,
     AboutUsComponent,
     ProductsComponent,
-    BasketComponent
+    BasketComponent,
+    MainComponent,
+    BasketItemComponent
   ],
   imports: [
     BrowserModule,
